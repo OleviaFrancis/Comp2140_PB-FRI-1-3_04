@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href= "elr.css" type ="text/css" rel="stylesheet"/>
+        <title>Blog</title>
+        <div id="blog-header">
+        <h1>Elsa Leo-Rhynie Hall Blog</h1>
+        </div>
+    </head>
+    <body id="blog-body">
+        <p>Report Your Issues Here</p>
+        <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="First name">
+            
+            <label for="lname">Last Name</label>
+            <input type="text" id="fname" name="lastname" placeholder="Last name">
+            
+            <label for="issue">Issue Type</label>
+            <select id = "issue" name ="issuetype">
+                    <option value="furniture">Furniture</option>
+                    <option value ="other">WiFi</option>
+                    <option value="insects">Insects</option>
+                    <option value ="other">Other</option>
+            </select>
+            <br>
+            <p>Give a brief desciption of the issue below.</p>
+            <br>
+            <textarea name= "message" rows="5" cols="20">Type here..</textarea>
+            <br><br>
+            <input type= "submit" value="Submit Now">
+            
+        </form>
+       <!-- <img scr ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyxp39EMlJdUGCR8Vur-7brtjszi3O10Qkfm3zfaL8R6GfOVXI" 
+        alt = "Background Image" width="300" height="500">-->
+    </body>
+</html>
