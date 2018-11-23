@@ -93,13 +93,13 @@ tr:nth-child(even) {
 	display: flex;
 }
 
-/*grid css ends*/
-
-#blog-header{
-	background-color:green;
-	padding: 50px;
-	color:white;
+.body{
+  display:grid;
+  background-color:#eee;
+  grid-template-rows: 30% 70%;
 }
+
+/*grid css ends*/
 
 
 ul {
@@ -230,3 +230,85 @@ li a:hover {
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+/*Blog CSS*/
+#blog-header{
+	background-color:#A9A9A9;
+	padding: 25px;
+	color:white;
+}
+
+h1{
+	text-align: center;
+	font-size: 50px;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+h2{
+	text-align: center;
+	
+}
+
+h3{
+	font-family: comic;
+
+}
+
+.grid{
+  display:grid;
+  background-color:white;
+  grid-template-columns: 200px 300px;
+}
+
+
+
+.grid .updates{
+	display: grid;
+	background: white;
+	grid-template-columns: 400px 400px 400px;
+	height: 250px;
+}
+
+.grid .google-stories{
+	display:grid;
+	grid-template-columns: 800px 500px;
+	height:400px;
+	grid-column-gap: 10px;
+	
+}
+
+.top-stories{
+	background:white;
+	padding: 30px;
+	font-size: 50px;
+}
+
+#google{
+	font-family:Verdana;
+	font-size: 35px;
+	font-weight:normal;
+	
+}
+
+#tips{
+	text-align:center;
+	font-family:arial;
+	font-size: 15px;
+	
+}
+
+#google1{
+	font-family:Comic;
+	font-size: 70px;
+	text-shadow: 2px 2px 4px #000000;
+	
+}
+.empty-div{
+	height:100px;
+}
+.report-issues{
+	width: 750px;
+	background-color: #eee;
+	padding:10px;
+}
+/*Blog CSS ends/
