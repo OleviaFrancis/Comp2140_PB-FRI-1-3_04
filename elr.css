@@ -25,83 +25,6 @@ tr:nth-child(even) {
 }
 
 
-
-/*grid css*/
-.wrapper {
-	background-color: white;
-	display: grid;
-	grid-template-columns: 10rem 5rem 10rem;
-  	grid-template-rows: auto 1fr auto;
-	grid-template-areas:
-		"header 		header 	header 	header"
-		"sidebar 	sidebar 		main 		main"
-		"footer 		footer 	footer	footer";
-	max-width: 1070px;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	border: 1px solid #ccc;
-	@media (max-width: 36rem) {
-		display: flex;
-		flex-direction: column;
-	}
-}
-
-.header {
-	background-color: black;
-	color: #FFFFFF;
-	text-align: center;
-	grid-area: header;
-	padding: 4rem;
-	border-bottom: 1px solid #ccc;
-	@media (max-width: 36rem){
-		order: 1;
-	}
-}
-
-.main {
-	grid-area: main;
-	padding: 1rem;
-	width: 80%;
-	@media (max-width: 36rem) {
-		order: 1;
-	}
-}
-
-.aside {
-	grid-area: sidebar;
-	padding: 1rem;
-	margin: 20px;
-	background-color: white;
-	border-right: 1px solid #ccc;
-	@media (max-width: 36rem) {
-		order: 3;
-		border-right: 0;
-		border-top: 1px solid #ccc;
-	}
-}
-.footer {
-	grid-area: footer;
-	padding: 1rem;
-	border-top: 1px solid #ccc;
-	@media (max-width: 36rem) {
-		order: 4;
-	}
-}
-
-.flex-container {
-	display: flex;
-}
-
-.body{
-  display:grid;
-  background-color:#eee;
-  grid-template-rows: 30% 70%;
-}
-
-/*grid css ends*/
-
-
 ul {
     
     list-style-type: none;
@@ -132,105 +55,7 @@ li a:hover {
     background-color: #111;
 }
 
-
-
-
-/* Slideshow css*/
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
+\
 /*Blog CSS*/
 #blog-header{
 	background-color:#A9A9A9;
@@ -311,4 +136,184 @@ h3{
 	background-color: #eee;
 	padding:10px;
 }
-/*Blog CSS ends/
+/*Blog CSS ends*/
+
+/*Bootstrap starts*/
+
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+button#b1 {
+    background-color: #428bca;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button#b2 {
+    text-decoration: none;
+    color: #000000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    
+}
+
+
+.cancelbtn {
+    width: auto;
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 10%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 0% auto 15% auto;
+    border: 1px solid #888;
+    width: 50%; 
+	
+}
+
+article {
+    margin-left: 100px;
+    border-left: 3px ;
+    padding: 5em;
+    overflow: hidden;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+
+html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+
+h1{
+    
+    position:relative;
+   
+}
+
+table#t1{
+    margin:20px;
+}
+
+
+div.menu {
+    background-color: white;
+    overflow: none;
+    white-space: nowrap;
+	position:relative;
+	width:100%;
+	
+}
+
+	
+	BUTTON:HOVER{
+	BACKGROUND-COLOR:#428bca;
+	
+	}
+
+
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+
+nav#nav1 a:hover {
+    background-color:#428bca;
+}
+/*bootstrap ends*/

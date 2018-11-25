@@ -1,14 +1,157 @@
-<!DOCTYPE html>
 <html>
-    <body>
-        <form action="/action_page.php">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+<head>
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-    <label for="country">Country</label>
+ <title>Elsa Leo-Rhynie Hall </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <script src="vendor/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+	
+	<div class="header">
+			<nav id="nav1" class="navbar navbar-default navbar-fixed-top">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>                        
+			      </button>
+			      <a class="navbar-brand" href="homepage.html">Elsa Leo-Rhynie Hall</a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="myNavbar">
+			      <ul class="nav navbar-nav">
+			       
+			         <li><a href="elrform.html">Form</a></li>
+			        <li><a href="elr_blog.html">Blog</a></li>
+					<li> <a href="hall.html">Song & Pledge</a></li>
+			        <li><a href="elr_about.html">About</a></li>
+			        <li><a href="contactus.html">Contact</a></li>
+			       </ul>
+			      <ul class="nav navbar-nav navbar-right">
+			<div id="id03" class="modal">
+			  
+			  <form class="modal-content animate">
+			    <div class="imgcontainer">
+			      <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+			      <center><img src="avatar.jpg" style="width:200px;height:250px;" alt="Avatar" class="avatar"></center>
+			    </div>
+			
+			    <div class="container">
+			    	<center>
+			      <label><b>Username</b></label><br>
+			      <input type="text" placeholder="Enter Username" name="uname" required><br>
+			
+			      <label><b>Password</b></label><br>
+			      <input type="password" placeholder="Enter Password" name="psw" required><br>
+			        
+			      <button id="b1" style="width:auto; background-color:#428bca;" onclick= "check1(this.form)" type="submit">Login</button>
+			     
+			    
+			     
+			      <button type="reset"   onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+				  <B>OR</B>
+				  <A href="signup.html">Sign UP </A> 
+				  <BR>
+				   <input type="checkbox" checked="checked"> Remember me
+					</center>
+				  </div>
+			  </form>
+			  <script language="javascript">
+			function check1(form) {if(form.uname.value=="welcome" && form.psw.value=="welcome"){
+			window.open('logged/about.html')
+			window.close() 
+			}
+			else{
+			alert("The username or password you have entered is incorrect. ")
+			}
+			}
+			</script>
+			</div>
+			
+			<script>
+			
+			var modal = document.getElementById('id03');
+			
+			
+			window.onclick = function(event) {
+			    if (event.target == modal) {
+			        modal.style.display = "none";
+			    }
+			}
+			</script>
+        <li onclick="document.getElementById('id03').style.display='block'" style="width:auto;"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<br>
+<body>
+<br>
+	<article>
+		<text align=center><h1><i><u> Elsa Leo-Rhynie Hall Application Form </u></i></h1></text>
+	<text align=center><h1><i><u> Academic Year 18/19 </u></i></h1></text>
+	<br>
+	<hr>
+	<hr>
+	<h3><p><i><u><b>GENERAL INFORMATION </b></u></i></p></h3>
+	<br>
+    <form action="/action_page.php">
+    <form class="form-vertical"></form>
+  	<div class="span">
+    <div class="form-inline">
+      <label for="firstname"><h4>FirstName</h4></label>
+      <input type="firstname" class="form-control" id="firstname" placeholder="Enter your firstname">
+    </div>
+    <br>
+    <br>
+    <div class="form-inline">  
+    <label for="lastname"><h4>LastName:</h4></label>
+    <input type="lastname" class="form-control" id="lastname" placeholder="Enter your lastname">
+  </div>
+  
+  <br>
+  <div class="form-inline">
+   <label for="gender"><h4>Gender:</h4></label>
+    <input type="checkbox" name="male" value="male"> Male
+    <input type="checkbox" name="female" value="female"> Female
+	</input>
+	</div>
+	<br>
+	
+	<br>
+    <div class="form-inline">  
+    <label for="studentid"><h4>StudentID#:</h4></label>
+    <input type="studentid" class="form-control" id="studentid" placeholder="620000000">
+  </div>
+  <br>
+  <br>
+    <div class="form-inline"> 
+    <label for="dob"><h4>Date of Birth:</h4></label>
+    <input type="dob" class="form-control" id="dob" placeholder="March 27 1999">
+  <br>
+  <br>
+  <div class="form-inline"> 
+  <label for="roomnumber"><h4>Current Room Number:</h4></label>
+  <input type="roomnumber" class="form-control" id="roomnumber" placeholer="">
+  </div>
+  <br>
+  <br>
+  <div class="form-inline"> 
+  <label for="roomnumber"><h4>Prospective Room Number:</h4></label>
+  <input type="roomnumber" class="form-control" id="roomnumber" placeholer="">
+  </div>
+  <br>
+  
+  
+  <br>
+  <div class="form-inline">
+  <label for="country"><h4>Territory/Nationality</h4></label>
+    <br>
     <select id="country" name="country">
        <option value="Afghanistan">Afghanistan</option>
         <option value="Anguilla">Anguilla</option>
@@ -87,8 +230,245 @@
         <option value="Zambia">Zambia</option>
         <option value="Zimbabwe">Zimbabwe</option>
     </select>
-  
+    <br>
+    <br>
+	<div class="form-inline"> 
+    <label for="homeaddress"><h4>Home Address:</h4></label>
+    <input type="homeaddress" class="form-control" id="homeaddress" placeholder="Eg: Lot 46 Luana Pen...">
+	</div>
+  	<hr>
+  	<hr>
+  	<h3><p><i><u><b>ADDITIONAL INFORMATION </b></u></i></p></h3>
+    <div class="form-inline"> 
+    <label for="phone number"><h4>Telephone Number:</h4></label>
+    <input type="phone number" class="form-control" id="phone number" placeholder="">
+	</div>
+	<br>
+	<br>
+	<div class="form-inline"> 
+    <label for="emailaddress"><h4>Email Address:</h4></label>
+    <input type="emailaddress" class="form-control" id="emailaddress" placeholer="joebrown@uwimona.edu.jm">
+  	</div>
+  	<br>
+  	
+  	<br>
+  	<div class="form-inline">
+  	<label for="major"><h4>Major:</h4></label>
+    <input type="major" class="form-control" id="major" placeholer="">
+  	</div>
+  	<br>
+  	<br>  	
+  	<div class="form-inline">
+    <label for="yearofstudy"><h4>Year of Study</h4></label>
+    <br>
+    <input type="checkbox" name="yearofstudy" value="1st year"> 1st Year
+    <input type="checkbox" name="yearofstudy" value="2nd year"> 2nd Year
+    <input type="checkbox" name="yearofstudy" value="3rd year"> 3rd Year
+    <input type="checkbox" name="yearofstudy" value="4th year"> 4th Year
+    <input type="checkbox" name="yearofstudy" value="5th year"> 5th Year
+    </input>
+    </div>
+    <br>
+    <br>
+    <div class="form-inline">
+    <label for="faculty"><h4>Faculty </h4></label>
+    <br>
+    <input type="checkbox" name="faculty" value="Humanities and Education"> Humanities and Education
+    <input type="checkbox" name="faculty" value="Science and Technology"> Science and Technology
+    <input type="checkbox" name="faculty" value="Medical Sciences"> Medical Sciences
+    <input type="checkbox" name="faculty" value="Law"> Law
+    <input type="checkbox" name="faculty" value="Social Sciences"> Social Sciences
+    <input type="checkbox" name="faculty" value="Sports and Education"> Sports and Education
+    <input type="checkbox" name="faculty" value="Engineering"> Engineering
+    </input>
+    </div>
+    <br>
+    <br>
+    <div class="form-inline">
+    <label for="stat"><h4> Degree Level:</h4></label>
+    <input type="checkbox" name="undergraduate" value="Undergraduate"> Undergraduate
+    <input type="checkbox" name="postgraduate" value="Postgraduate"> Postgraduate
+	</input>
+	</div>
+	<br>
+	<br>
+	 <div class="form-inline"> 
+	<label for="school"><h4>Name of secondary high school: </h4></label>
+	<input type="text" name="school"><br>
+	</div>
+	<br>
+	<div class="form-inline"> 
+	<label for="skills"><h4> Special Skills:</h4></label>
+	<input type="text" name="skills"><br>
+	</div>
+	<hr>
+	<hr>
+	<h3><p><i><u><b>MEDICAL INFORMATION </b></u></i></p></h3>
+	<br>
+	<div class="form-inline"> 
+	<label for="illnesses"><h4> Any chronic illness(es)?</h4></label>
+	<input type="text" name="illnesses"><br>
+	</div>
+	<br>
+	<br>
+	<div class="form-inline"> 
+	<label for="specifics"><h4> Please specify </h4></label>
+	<input type="text" name="specifics"><br>
+	</div>
+	<br>
+	<br>
+	<hr>
+	<hr>
+	<h3><p><i><u><b>EMERGENCY CONTACT</b></u></i></p></h3>
+	<br>
+	<div class="form-inline">
+	<label for="emcontact"><h4> Name of Emergency Contact</h4></label>
+	<input type="text" name="emcontact"><br>
+	</div>
+	<br>
+	<br>
+	<div class="form-inline">
+	<label for="relationship"><h4> Relationship </h4></label>
+	<input type="text" name="relationship"><br>
+	</div>
+	<br>
+	<br>
+	<div class="form-inline">
+	<label for="number"><h4> Contact Number </h4></label>
+	<input type="text" name="number"><br>
+	</div>
+	<br>
+	<br>
+    <div class="form-inline">
+	<label for="contactaddresss"><h4> Home Address </h4></label>
+	<input type="text" name="contactaddresss"><br>
+	</div>
+	<br>
+	<hr>
+	<hr>
+	<br>
+	<h3><text align="center"><i><b><u> HALL AND UNIVERSITY INVOLVEMENT</u></b></i></text></h3>
+	<br>
+	<br>
+	<div class="form-inline">
+	<label for="campus"><h4> Have you ever lived on campus?</h4><label>
+	<input type="checkbox" name="yes" value="yes"> Yes
+	<input type="checkbox" name="no" value="no"> No
+	</div>
+	<div class="form-inline">
+	<label for="reason"><h4> If yes, plese indicate Hall and Period(Year) </h4></label>
+	<input type="text" name="reason"><br>
+	</div>
+	<div class="form-inline">
+	<label for="reason2"><h4> If yes, please state your reason for leaving the Hall</h4></label>
+	<input type="text" name="reason2"><br>
+    </div>
+    <div class="form-inline">
+    	<h4> For the period for which you are requesting residence, will you be holding an official post in:</h4>
+    	<h4> E.L.R Towers Hall Committee:</h4><input type="checkbox" name="yes" value="yes"> Yes<input type="checkbox" name="no" value="no">No <p>Post</p><input type="text" name="post">
+    	<h4> Guild of Students:</h4><input type="checkbox" name="yes" value="yes"> Yes<input type="checkbox" name="no" value="no">No <p>Post</p><input type="text" name="post">
+    </div>
+	<br>
+	<br>
+	<div class="form-inline">
+	<label for="reasonson3"><h4>State specifically, the reason for wanting to reside in Hall:</h4></label>
+	<input type="text" name="reason3"><br>
+	</div>
+	<br>
+	<h2><b><i>Co-curricular Activities 2017-2018 ONLY- these activities must be verified by the signatures and official stamps/seals of Heads of Clubs and Societies.</b></i></h3>
+	<div class="form-inline">
+	<label for="activities"><h4> (i) University Activities</h4></label>
+	<input type="text" name="activities"><br>
+	</div>
+	<br>
+	<br>
+	<div class="form-inline">
+	<label for="activities"><h4> (ii) Hall Activities</h4></label>
+	<input type="text" name="activities"><br>
+	</div>
+	<br>
+	<br>
+	<div class="form-inline">
+	<label for="activities1"><h4> (iii) Tower Activities</h4></label>
+	<input type="text" name="activities1"><br>
+	<br>
+	<br>
+	<div class="form-inline">
+	<label for="activities3"><h4> (iv) Other Activities</h4></label>
+	<input type="text" name="activities"><br>
+	</input>
+	</div>
+	<br><br>
+	<h3><b> I affirm that the information furnished is true and correct and that it is my intention to
+make a positive contribution to life on my Tower, in the Hall and University. I agree to
+abide by all rules and regulations as set out in the Charter of Hall Principles and
+Responsibilities and I realize that failure to do so could result in expulsion from the Hall
+and/or other sanctions.</b></h3>
+	<hr>
+	<hr>
+	<h4> Applicant Signature</h4><input type="text" name="Signature"><br>
+	<h4> Date</h4><input type="text" name="Signature"><br>
+	<br>
+	<br>
     <input type="submit" value="Submit">
   </form>
-    </body>
+	</article>
+	<br>
+	<br>
+	<br>
+
+ <div id="services" class="bg-primary">
+        <div class="container"  style="width:100%; background-color:#cc0000;">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h4>ELR Towers Hall</h4>
+                    <hr class="small">
+                    <div class="row">
+					        <a href="elrform.html">
+                        <div class="col-md-3 col-sm-6" >
+                            <div>
+                                <h4>
+                                   <strong style="color:white;">Form</strong>
+                                </h4 >
+                            </div>
+                        </div>
+											</a>
+												<a href="elr_blog.html">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <h4>
+                                    <strong style="color:white;">Blog</strong>
+                                </h4>
+                            </div>
+                        </div>
+						</a>
+						<a href="hall.html">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <h4>
+                                    <strong style="color:white;">Song and Pledge</strong>
+                                </h4>
+                            </div>
+                        </div>
+						</a>
+						<a href="contactus.html">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <h4>
+                                    <strong style="color:white;">Contact Us</strong>
+                                </h4>
+                            </div>
+                        </div>
+						</a>
+                    </div>
+                </div>
+                
+            </div>
+           
+        </div>
+    </div>
+
+
+
+</body>
 </html>
