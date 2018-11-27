@@ -83,6 +83,7 @@ h3{
   display:grid;
   background-color:white;
   grid-template-columns: 200px 300px;
+  width: auto;
 }
 
 

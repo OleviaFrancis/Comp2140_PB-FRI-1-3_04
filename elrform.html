@@ -53,8 +53,6 @@
 			    
 			     
 			      <button type="reset"   onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
-				  <B>OR</B>
-				  <A href="signup.html">Sign UP </A> 
 				  <BR>
 				   <input type="checkbox" checked="checked"> Remember me
 					</center>
@@ -100,25 +98,27 @@
 	<hr>
 	<h3><p><i><u><b>GENERAL INFORMATION </b></u></i></p></h3>
 	<br>
-    <form action="/action_page.php">
+	
+
+    <form action="submit.php" method="post">
     <form class="form-vertical"></form>
   	<div class="span">
     <div class="form-inline">
       <label for="firstname"><h4>FirstName</h4></label>
-      <input type="firstname" class="form-control" id="firstname" placeholder="Enter your firstname">
+      <input type="text" name="firstname" class="form-control" id="firstname" placeholder="Enter your firstname" required>
     </div>
     <br>
     <br>
     <div class="form-inline">  
     <label for="lastname"><h4>LastName:</h4></label>
-    <input type="lastname" class="form-control" id="lastname" placeholder="Enter your lastname">
+    <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Enter your lastname" required>
   </div>
   
   <br>
   <div class="form-inline">
    <label for="gender"><h4>Gender:</h4></label>
-    <input type="checkbox" name="male" value="male"> Male
-    <input type="checkbox" name="female" value="female"> Female
+    <input type="checkbox" name="male" value="male"required> Male
+    <input type="checkbox" name="female" value="female" required> Female
 	</input>
 	</div>
 	<br>
@@ -126,33 +126,33 @@
 	<br>
     <div class="form-inline">  
     <label for="studentid"><h4>StudentID#:</h4></label>
-    <input type="studentid" class="form-control" id="studentid" placeholder="620000000">
+    <input type="text" class="form-control" id="studentid" placeholder="620000000" required>
   </div>
   <br>
   <br>
     <div class="form-inline"> 
     <label for="dob"><h4>Date of Birth:</h4></label>
-    <input type="dob" class="form-control" id="dob" placeholder="March 27 1999">
+    <input type="date" name="dob"  class="form-control" id="dob" placeholder="March 27 1999" required>
   <br>
   <br>
   <div class="form-inline"> 
   <label for="roomnumber"><h4>Current Room Number:</h4></label>
-  <input type="roomnumber" class="form-control" id="roomnumber" placeholer="">
+  <input type="number" name="roomnumber" class="form-control" id="roomnumber" placeholder="6205" required>
   </div>
   <br>
   <br>
   <div class="form-inline"> 
   <label for="roomnumber"><h4>Prospective Room Number:</h4></label>
-  <input type="roomnumber" class="form-control" id="roomnumber" placeholer="">
+  <input type="number" class="form-control" id="roomnumber" placeholder="6215" required>
   </div>
   <br>
   
   
   <br>
   <div class="form-inline">
-  <label for="country"><h4>Territory/Nationality</h4></label>
+  <label name="nationality" for="country"><h4>Territory/Nationality</h4></label>
     <br>
-    <select id="country" name="country">
+    <select id="country" name="country" required>
        <option value="Afghanistan">Afghanistan</option>
         <option value="Anguilla">Anguilla</option>
         <option value="Antarctica">Antarctica</option>
@@ -234,38 +234,38 @@
     <br>
 	<div class="form-inline"> 
     <label for="homeaddress"><h4>Home Address:</h4></label>
-    <input type="homeaddress" class="form-control" id="homeaddress" placeholder="Eg: Lot 46 Luana Pen...">
+    <input type="text" name="homeaddress" class="form-control" id="homeaddress" placeholder="Eg: Lot 46 Luana Pen..." required>
 	</div>
   	<hr>
   	<hr>
   	<h3><p><i><u><b>ADDITIONAL INFORMATION </b></u></i></p></h3>
     <div class="form-inline"> 
     <label for="phone number"><h4>Telephone Number:</h4></label>
-    <input type="phone number" class="form-control" id="phone number" placeholder="">
+    <input type="text" class="form-control" id="phone number" placeholder="eg: 1-876-123-4567" required>
 	</div>
 	<br>
 	<br>
 	<div class="form-inline"> 
     <label for="emailaddress"><h4>Email Address:</h4></label>
-    <input type="emailaddress" class="form-control" id="emailaddress" placeholer="joebrown@uwimona.edu.jm">
+    <input type="textarea" name="email" class="form-control" id="emailaddress" placeholder="joebrown@uwimona.edu.jm" required>
   	</div>
   	<br>
   	
   	<br>
   	<div class="form-inline">
   	<label for="major"><h4>Major:</h4></label>
-    <input type="major" class="form-control" id="major" placeholer="">
+    <input type="textarea"  name= "major"class="form-control" id="major" placeholder="Bsc. Software Engineering" required>
   	</div>
   	<br>
   	<br>  	
   	<div class="form-inline">
-    <label for="yearofstudy"><h4>Year of Study</h4></label>
+    <label for="yearofstudy" name="yearofstudy"><h4>Year of Study</h4></label>
     <br>
-    <input type="checkbox" name="yearofstudy" value="1st year"> 1st Year
-    <input type="checkbox" name="yearofstudy" value="2nd year"> 2nd Year
-    <input type="checkbox" name="yearofstudy" value="3rd year"> 3rd Year
-    <input type="checkbox" name="yearofstudy" value="4th year"> 4th Year
-    <input type="checkbox" name="yearofstudy" value="5th year"> 5th Year
+    <input type="checkbox" name="yearofstudy" value="1st year" required> 1st Year
+    <input type="checkbox" name="yearofstudy" value="2nd year" required> 2nd Year
+    <input type="checkbox" name="yearofstudy" value="3rd year" required> 3rd Year
+    <input type="checkbox" name="yearofstudy" value="4th year" required> 4th Year
+    <input type="checkbox" name="yearofstudy" value="5th year" required> 5th Year
     </input>
     </div>
     <br>
@@ -273,33 +273,33 @@
     <div class="form-inline">
     <label for="faculty"><h4>Faculty </h4></label>
     <br>
-    <input type="checkbox" name="faculty" value="Humanities and Education"> Humanities and Education
-    <input type="checkbox" name="faculty" value="Science and Technology"> Science and Technology
-    <input type="checkbox" name="faculty" value="Medical Sciences"> Medical Sciences
-    <input type="checkbox" name="faculty" value="Law"> Law
-    <input type="checkbox" name="faculty" value="Social Sciences"> Social Sciences
-    <input type="checkbox" name="faculty" value="Sports and Education"> Sports and Education
-    <input type="checkbox" name="faculty" value="Engineering"> Engineering
+    <input type="checkbox" name="faculty" value="Humanities and Education" required> Humanities and Education
+    <input type="checkbox" name="faculty" value="Science and Technology" required> Science and Technology
+    <input type="checkbox" name="faculty" value="Medical Sciences" required> Medical Sciences
+    <input type="checkbox" name="faculty" value="Law" required> Law
+    <input type="checkbox" name="faculty" value="Social Sciences" required> Social Sciences
+    <input type="checkbox" name="faculty" value="Sports and Education" required> Sports and Education
+    <input type="checkbox" name="faculty" value="Engineering" required> Engineering
     </input>
     </div>
     <br>
     <br>
     <div class="form-inline">
-    <label for="stat"><h4> Degree Level:</h4></label>
-    <input type="checkbox" name="undergraduate" value="Undergraduate"> Undergraduate
-    <input type="checkbox" name="postgraduate" value="Postgraduate"> Postgraduate
+    <label for="stat" name:"degree"><h4> Degree Level:</h4></label>
+    <input type="checkbox" name="undergraduate" value="Undergraduate" required> Undergraduate
+    <input type="checkbox" name="postgraduate" value="Postgraduate" required> Postgraduate
 	</input>
 	</div>
 	<br>
 	<br>
 	 <div class="form-inline"> 
 	<label for="school"><h4>Name of secondary high school: </h4></label>
-	<input type="text" name="school"><br>
+	<input type="text" name="school" placeholder="XYHZ High School" required><br>
 	</div>
 	<br>
 	<div class="form-inline"> 
 	<label for="skills"><h4> Special Skills:</h4></label>
-	<input type="text" name="skills"><br>
+	<input type="text" name="skills" required><br>
 	</div>
 	<hr>
 	<hr>
@@ -307,13 +307,13 @@
 	<br>
 	<div class="form-inline"> 
 	<label for="illnesses"><h4> Any chronic illness(es)?</h4></label>
-	<input type="text" name="illnesses"><br>
+	<input type="text" name="illnesses" placeholder="eg:Asthma" required><br>
 	</div>
 	<br>
 	<br>
 	<div class="form-inline"> 
 	<label for="specifics"><h4> Please specify </h4></label>
-	<input type="text" name="specifics"><br>
+	<input type="text" name="specifics" placeholder="Enter text here.." required><br>
 	</div>
 	<br>
 	<br>
@@ -323,25 +323,25 @@
 	<br>
 	<div class="form-inline">
 	<label for="emcontact"><h4> Name of Emergency Contact</h4></label>
-	<input type="text" name="emcontact"><br>
+	<input type="text" name="emcontact" placeholder="Joe Diamond" required><br>
 	</div>
 	<br>
 	<br>
 	<div class="form-inline">
 	<label for="relationship"><h4> Relationship </h4></label>
-	<input type="text" name="relationship"><br>
+	<input type="text" name="relationship" placeholder="Mother/Father/..." required><br>
 	</div>
 	<br>
 	<br>
 	<div class="form-inline">
 	<label for="number"><h4> Contact Number </h4></label>
-	<input type="text" name="number"><br>
+	<input type="text" name="number" placeholder="1-876-123-4567" required><br>
 	</div>
 	<br>
 	<br>
     <div class="form-inline">
 	<label for="contactaddresss"><h4> Home Address </h4></label>
-	<input type="text" name="contactaddresss"><br>
+	<input type="text" name="contactaddresss" placeholder="1-8 Blueberry Street" required><br>
 	</div>
 	<br>
 	<hr>
@@ -352,50 +352,60 @@
 	<br>
 	<div class="form-inline">
 	<label for="campus"><h4> Have you ever lived on campus?</h4><label>
-	<input type="checkbox" name="yes" value="yes"> Yes
-	<input type="checkbox" name="no" value="no"> No
+	<input type="checkbox" name="yes" value="yes" required> Yes
+	<input type="checkbox" name="no" value="no" required> No
 	</div>
 	<div class="form-inline">
 	<label for="reason"><h4> If yes, plese indicate Hall and Period(Year) </h4></label>
-	<input type="text" name="reason"><br>
+	<input type="text" name="reason" placeholder="eg:2015-2016" required><br>
 	</div>
 	<div class="form-inline">
 	<label for="reason2"><h4> If yes, please state your reason for leaving the Hall</h4></label>
-	<input type="text" name="reason2"><br>
+	<input type="text" name="reason2" placeholder="Enter text here.." required><br>
     </div>
     <div class="form-inline">
-    	<h4> For the period for which you are requesting residence, will you be holding an official post in:</h4>
-    	<h4> E.L.R Towers Hall Committee:</h4><input type="checkbox" name="yes" value="yes"> Yes<input type="checkbox" name="no" value="no">No <p>Post</p><input type="text" name="post">
-    	<h4> Guild of Students:</h4><input type="checkbox" name="yes" value="yes"> Yes<input type="checkbox" name="no" value="no">No <p>Post</p><input type="text" name="post">
+        <label for="post"><h4> For the period for which you are requesting residence, will you be holding an official post in:</h4></label>
+    	<label for="ELR"></label><h4> E.L.R Towers Hall Committee:</h4></label>
+    	<input type="checkbox" name="yes" value="yes" required> Yes
+    	<input type="checkbox" name="no" value="no" required>No
+    	&nbsp Post  &nbsp &nbsp <input type="text" name="post" placeholder="Hall Chairman " required>
+    </div>
+    <div class="form-inline">
+        <label for="post1"><h4> Guild of Students:</h4></label>
+        <input type="checkbox" name="yes" value="yes" required> Yes
+        <input type="checkbox" name="no" value="no" required>No
+    &nbsp Post  &nbsp  &nbsp<input type="text" name="post" placeholder="Guild Secretary" required>
     </div>
 	<br>
 	<br>
 	<div class="form-inline">
-	<label for="reasonson3"><h4>State specifically, the reason for wanting to reside in Hall:</h4></label>
-	<input type="text" name="reason3"><br>
+	<label for="reason3"><h4>State specifically, the reason for wanting to reside in Hall:</h4></label>
+	<input type="text" name="reason3" placeholder="Please specify your reason here..." required><br>
 	</div>
 	<br>
-	<h2><b><i>Co-curricular Activities 2017-2018 ONLY- these activities must be verified by the signatures and official stamps/seals of Heads of Clubs and Societies.</b></i></h3>
+	<h3><i>Co-curricular Activities 2017-2018 ONLY- these activities must be verified by the signatures and official stamps/seals of Heads of Clubs and Societies.</i></h3>
+	<br>
+	<br>
 	<div class="form-inline">
 	<label for="activities"><h4> (i) University Activities</h4></label>
-	<input type="text" name="activities"><br>
+	<input type="text" name="activities" placeholder="eg:UWI OneLife" required><br>
 	</div>
 	<br>
 	<br>
 	<div class="form-inline">
 	<label for="activities"><h4> (ii) Hall Activities</h4></label>
-	<input type="text" name="activities"><br>
+	<input type="text" name="activities" placeholder="eg:Towers Courtesy Society" required><br>
 	</div>
 	<br>
 	<br>
 	<div class="form-inline">
 	<label for="activities1"><h4> (iii) Tower Activities</h4></label>
-	<input type="text" name="activities1"><br>
+	<input type="text" name="activities1" placeholder="eg:Inter-tower cricket" required><br>
 	<br>
 	<br>
 	<div class="form-inline">
 	<label for="activities3"><h4> (iv) Other Activities</h4></label>
-	<input type="text" name="activities"><br>
+	<input type="text" name="activities" placeholder="Please specify here.." required><br>
 	</input>
 	</div>
 	<br><br>
@@ -406,8 +416,8 @@ Responsibilities and I realize that failure to do so could result in expulsion f
 and/or other sanctions.</b></h3>
 	<hr>
 	<hr>
-	<h4> Applicant Signature</h4><input type="text" name="Signature"><br>
-	<h4> Date</h4><input type="text" name="Signature"><br>
+	<h4> Applicant Signature</h4><input type="text" name="Signature" placeholder="Please insert signature" required><br>
+	<h4> Date</h4><input type="text" name="Signature" placeholder="DD/MM/YYYY"><br>
 	<br>
 	<br>
     <input type="submit" value="Submit">

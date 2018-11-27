@@ -32,56 +32,10 @@
 			        <li><a href="contactus.html">Contact</a></li>
 			       </ul>
 			      <ul class="nav navbar-nav navbar-right">
-			<div id="id03" class="modal">
-			  
-			  <form class="modal-content animate">
-			    <div class="imgcontainer">
-			      <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
-			      <center><img src="avatar.jpg" style="width:200px;height:250px;" alt="Avatar" class="avatar"></center>
-			    </div>
-			
-			    <div class="container">
-			    	<center>
-			      <label><b>Username</b></label><br>
-			      <input type="text" placeholder="Enter Username" name="uname" required><br>
-			
-			      <label><b>Password</b></label><br>
-			      <input type="password" placeholder="Enter Password" name="psw" required><br>
-			        
-			      <button id="b1" style="width:auto; background-color:#428bca;" onclick= "check1(this.form)" type="submit">Login</button>
-			     
-			    
-			     
-			      <button type="reset"   onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
-				  <BR>
-				   <input type="checkbox" checked="checked"> Remember me
+        <li><a onclick="alert('Thank you for visiting our website!')"  href="homepage.html"><span class="glyphicon glyphicon-log-in"></span> Log out</a></li>
 					</center>
 				  </div>
 			  </form>
-			  <script language="javascript">
-			function check1(form) {if(form.uname.value=="welcome" && form.psw.value=="welcome"){
-			window.open('logged/about.html')
-			window.close() 
-			}
-			else{
-			alert("The username or password you have entered is incorrect. ")
-			}
-			}
-			</script>
-			</div>
-			
-			<script>
-			
-			var modal = document.getElementById('id03');
-			
-			
-			window.onclick = function(event) {
-			    if (event.target == modal) {
-			        modal.style.display = "none";
-			    }
-			}
-			</script>
-        <li onclick="document.getElementById('id03').style.display='block'" style="width:auto;"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
   </div>
@@ -97,21 +51,16 @@
 <br>
 
 	<article>
-		<center><div class="row">
-			<div class="col-md-12" >
-				<h2>Hall Song</h2>
-				<p>VERSE ONE: Standing tall above them all, Towers shall always reign. We move as one, second to none, We shall prevail.<br><br>
-				CHORUS: We strive for excellence, As we achieve a common goal, Long shall live Towers Hall, One and for all.<br><br>
-				VERSE TWO: We are the wolves, we show no fear, Red, black, silver we wear. Heart of a wolf, so fierce and brave, Victory we crave.<br><br>
-				CHORUS: We strive for excellence, As we achieve a common goal. Long shall stand Towers Hall, One and for all.
-			</p><br>
-			<h2>Hall Pledge</h2>
-			<p>I am a wolf, I pledge allegiance to the Elsa Leo-Rhynie Pack And the Distinguished family of the University of the West Indies;<br><br>
-			I promise to leave no wolf behind Because together, we stand as tall as our Towers, Dominating the environment in which we hunt for success and prey on excellence.<br><br> 
-			We use integrity to mark our place in the world And imprint the values of loyalty, respect and honour on all whom we encounter on our path to greatness.<br><br>
-			I am a wolf My pack and I are one For now and forever more AROOOOOOOOOOO!!!!!</p>
+		<div class="row">
+			<div class="col-md-6" >
+				<img src="towers.jpg"></img>
+			</div>
+		<div class="col-md-6" >
+			<p>Welcome to the Elsa Leo-Rhynie Hall! The place where you “Lead the pack on the hunt for excellence.”</p>
+			<p>On behalf of the residential and commuting students, alumni, friends and family of The University of the West Indies, 
+			Mona Campus community it is my pleasure to welcome you to Elsa Leo-Rhynie Hall</p>
 		</div>
-		</div></center>
+		</div>
 	</article>
 	<br>
 	<br>
@@ -166,8 +115,5 @@
             </div>
            
         </div>
-
-
-
 </body>
 </html>
