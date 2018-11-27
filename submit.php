@@ -1,5 +1,5 @@
 
-<?php
+<?php 
 $x= $_POST['firstname'];
 $y= $_POST['lastname'];
 $z= $_POST['studentid'];
