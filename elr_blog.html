@@ -31,6 +31,7 @@
 					<li> <a href="hall.html">Song & Pledge</a></li>
 			        <li><a href="elr_about.html">About</a></li>
 			        <li><a href="contactus.html">Contact</a></li>
+			        <li><a href="#report-issues">Report Issues</a></li>
 			       </ul>
 			      <ul class="nav navbar-nav navbar-right">
 			<div id="id03" class="modal">
@@ -98,55 +99,56 @@
 <br>
 
 	<article>
-	<div class="grid">
+	    	<div class="row">
+    			<div class="col-md-8" >
+    				<img src="http://www.tulabyte.net/wp-content/uploads/2016/08/blog-image1.jpg" alt= "" width="800" height= "400">
 
-            <div class="google-stories">
-                <div>
-                    <img src="http://www.tulabyte.net/wp-content/uploads/2016/08/blog-image1.jpg" alt= "" width="800" height= "400">
-                </div>
-                <div>
-                    <h2 id="google1">Google Stories</h2>
+    			</div>
+        		<div class="col-md-4" >
+        			 <h2 id="google1">Google Stories</h2>
                     <h2 id="google">What to do for Thanksgiving?</h3>
                     <p id="tips">Tips, tricks and trends to have a successful Thanksgiving.</p><br>
                     <a href="https://www.blog.google/products/search/google-search-trends-thanksgiving-2018/"  target="_blank">READ ARTICLE</a>
-                </div>    
 
-            </div>
-            <div class="top-stories">Campus Stories</div>
-
-            <div class="updates">
-                <div >
-        	       <h3>Upcoming Hall Activites</h3>
+        		</div>
+		    </div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+    		<div class="row">
+    				<div class="col-md-4" >
+    				            	       <h3>Upcoming Hall Activites</h3>
         	       <p>Week of Hall Activities</p>
                     <img src="https://www.mona.uwi.edu/marcom/sites/default/files/marcom/uploads/towers_hall_events.png" alt="Hall Activities" width="300" height = "200"><br><br>
                     <a href="https://www.mona.uwi.edu/marcom/ecalendar/events/6363" target= "_blank">See more</a>
-                </div>
- 
-                <div>
-                    <h3>Job Opportunities</h3>
+    		        </div>
+    		        
+    		    	<div class="col-md-4" >
+    				<h3>Job Opportunities</h3>
                     <p>Need to secure a job to help secure the cost of your education?</p>
                     <img src="https://www.mona.uwi.edu/sites/all/themes/uwi/images/inside/campuslife/bn_jobs.jpg" alt="Job Opportunities" width="300" height="200"><br>
                     <a href="https://www.mona.uwi.edu/content/job-opportunities" target= "_blank">See more</a>
-                </div> 
-
-                <div>
-                    <h3>Useful Study Tips</h3>
+    			    </div>
+    	
+    	            <div class="col-md-4" >
+    				                    <h3>Useful Study Tips</h3>
                     <p>Get straight A's this semester!</p>
                     <img src="https://www.how-to-study.com/images/study-skills-assessments.jpg" alt="Study Tips" width="300" height="200"><br><br>
                     <a href="https://www.campusexplorer.com/college-advice-tips/2DF9E34D/7-Best-Study-Tips-for-College-Students/" target= "_blank">Read here</a>
-                </div>
 
-
-            </div>
+    			    </div>
+    		</div>
             <div class="empty-div"></div>
-            <div class= "report-issues">
-                <h2>Report Your Issues Here</h2>
-                <form>
+            <div name="report-issues" id= "report-issues" style="background-color:#D3D3D3; width:700px;">
+                <h2><strong>Report Your Issues Here</strong></h2>
+                <form method="post" action="submit.php">
                     <label for="fname">First Name:</label>
-                    <input type="text" id="fname" name="firstname" placeholder="First name">
+                    <input type="text" id="fname" name="firstname" placeholder="First name" required>
             
                      <label for="lname">Last Name:</label>
-                     <input type="text" id="fname" name="lastname" placeholder="Last name">
+                     <input type="text" id="fname" name="lastname" placeholder="Last name" required>
             
                     <label for="issue">Issue Type:</label>
                     <select id = "issue" name ="issuetype">
@@ -158,11 +160,14 @@
                     <br>
                     <br>
                     <label for="idnum">ID Number:</label>
-                    <input type="text" id ="idnum" name="idnumber" placeholder="000000000">
+                    <input type="text" id ="idnum" name="idnumber" placeholder="000000000" required>
 
                     <label for="email">Email:</label>
-                    <input type="text" id="email" name="email" placeholder="your-name@mymona.uwi.edu">
-
+                    <input type="text" id="email" name="email" placeholder="name@mymona.uwi.edu" required>
+                    
+                    <label for="roomnum">Room Number:</label>
+                    <input type="text" id ="roomnum" name="roomnumber" placeholder="5421" required size="5" required>
+                    <br>
                     <br>
 
                     <p>Give a brief description of the issue below.</p>

@@ -132,7 +132,7 @@ h3{
 .empty-div{
 	height:100px;
 }
-.report-issues{
+#report-issues{
 	width: 750px;
 	background-color: #eee;
 	padding:10px;
