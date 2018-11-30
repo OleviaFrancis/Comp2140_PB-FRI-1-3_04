@@ -59,7 +59,7 @@
 			  </form>
 			  <script language="javascript">
 			function check1(form) {if(form.uname.value=="welcome" && form.psw.value=="welcome"){
-			window.open('logged/about.html')
+			window.open('logged/homepage.html')
 			window.close() 
 			}
 			else{
@@ -120,22 +120,22 @@
 			<div class="col-md-12" >
 				<p>We are here to answer any question, leave a message below or 
 				email  us at Towers4development@gmail.com or call us at 1876-977-0126.</p>
-				<form>
+				<form action="contact.php" method="POST">
 					<label for="fname">Your Full Name:</label>
 					<br>
-					<input type="text"id="Name" name="Name"/>
+					<input type="text"id="Name" name="Name" pattern="[a-zA-Z ]{6,32}"/>
 					<br>
 					<label for="Email">Email Address:</label>
 					<br>
-					<input type="text" id="Email" name="Email"/>
+					<input type="text" id="Email" name="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
 					<br>
 					<label for="phone">Phone Number:</label>
 					<br>
-					<input type="text" id="phone" name="phone"/>
+					<input type="text" id="phone" name="phone" pattern="[0-9- ]{6,32}"/>
 					<br>
-					<label for="executive">Person you wish to contact:</label>
+					<label for="recipient">Person you wish to contact:</label>
 					<br>
-					<select id="executive" name="executive">
+					<select id="recipient" name="recipient">
 						<option value="SSDM">Mr. Bertrum Anderson</option>
 						<option value="Operations Manager">Imran Anderson</option>
 						<option value="Hall chair">Leon Beckford</option>
@@ -146,7 +146,7 @@
 					<br>
 					<label for="message">Message:</label>
 					<br>
-            		<textarea name= "message" rows="5" cols="50">Type here..</textarea>
+            		<textarea name= "message" rows="5" cols="50" placeholder="Type here"></textarea>
             		<br>
             		<input type= "submit" value="Submit Now">
 				</form>

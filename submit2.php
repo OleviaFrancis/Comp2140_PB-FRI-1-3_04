@@ -6,12 +6,12 @@ $z= $_POST['studentid'];
 $a= $_POST['gender'];
 $b= $_POST['dob'];
 $c= $_POST['roomnumber'];
-$d= $_POST['nationality'];
+$d= $_POST['country'];
 $e= $_POST['homeaddress'];
-$f= $_POST['emailaddress'];
+$f= $_POST['email'];
 $g= $_POST['major'];
 $h= $_POST['yearofstudy'];
-$i= $_POST['degree'];
+$i= $_POST['stat'];
 $servername= getenv('IP');
 $username=getenv('C9_USER');
 $password="";
@@ -44,6 +44,9 @@ $result= $conn->query($sql);
 if($result->num_rows > 0){
 	//output data in rows
 	//var_dump($result->fetch_assoc());exit;
+	echo "<script>alert('Your application has been submitted');
+	document.location='/homepage.html'</script>";
+	
 echo "<table>";
 	while ($row = $result->fetch_assoc()){
 		echo"<tr><td> StudentID:"  .  $row["StudentID"] . 

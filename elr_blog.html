@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><html>
+<html>
 <head>
 
 
@@ -26,12 +26,11 @@
 			    <div class="collapse navbar-collapse" id="myNavbar">
 			      <ul class="nav navbar-nav">
 			       
-			         <li><a href="elrform.html">Form</a></li>
+			        <li><a href="elrform.html">Form</a></li>
 			        <li><a href="elr_blog.html">Blog</a></li>
 					<li> <a href="hall.html">Song & Pledge</a></li>
 			        <li><a href="elr_about.html">About</a></li>
 			        <li><a href="contactus.html">Contact</a></li>
-			        <li><a href="#report-issues">Report Issues</a></li>
 			       </ul>
 			      <ul class="nav navbar-nav navbar-right">
 			<div id="id03" class="modal">
@@ -45,7 +44,7 @@
 			    <div class="container">
 			    	<center>
 			      <label><b>Username</b></label><br>
-			      <input type="text" placeholder="Enter Username" name="uname" required><br>
+			      <input type="text" placeholder="Enter Username" name="uname" required ><br>
 			
 			      <label><b>Password</b></label><br>
 			      <input type="password" placeholder="Enter Password" name="psw" required><br>
@@ -62,7 +61,7 @@
 			  </form>
 			  <script language="javascript">
 			function check1(form) {if(form.uname.value=="welcome" && form.psw.value=="welcome"){
-			window.open('logged/about.html')
+    		window.open('logged/homepage.html')
 			window.close() 
 			}
 			else{
@@ -140,44 +139,8 @@
 
     			    </div>
     		</div>
-            <div class="empty-div"></div>
-            <div name="report-issues" id= "report-issues" style="background-color:#D3D3D3; width:700px;">
-                <h2><strong>Report Your Issues Here</strong></h2>
-                <form method="post" action="submit.php">
-                    <label for="fname">First Name:</label>
-                    <input type="text" id="fname" name="firstname" placeholder="First name" required>
-            
-                     <label for="lname">Last Name:</label>
-                     <input type="text" id="fname" name="lastname" placeholder="Last name" required>
-            
-                    <label for="issue">Issue Type:</label>
-                    <select id = "issue" name ="issuetype">
-                        <option value="furniture">Furniture</option>
-                        <option value ="other">WiFi</option>
-                        <option value="insects">Insects</option>
-                        <option value ="other">Other</option>
-                    </select>
-                    <br>
-                    <br>
-                    <label for="idnum">ID Number:</label>
-                    <input type="text" id ="idnum" name="idnumber" placeholder="000000000" required>
-
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" name="email" placeholder="name@mymona.uwi.edu" required>
-                    
-                    <label for="roomnum">Room Number:</label>
-                    <input type="text" id ="roomnum" name="roomnumber" placeholder="5421" required size="5" required>
-                    <br>
-                    <br>
-
-                    <p>Give a brief description of the issue below.</p>
-                    <br>
-                    <textarea name= "message" rows="5" cols="20">Type here..</textarea>
-                    <br><br>
-                    <input type= "submit" value="Submit Now">
-            
-                </form>
-            </div>
+    		
+           
        </div>
 	</article>
 	<br>
@@ -234,7 +197,4 @@
            
         </div>
 </body>
-</html>
-
-    </body>
 </html>

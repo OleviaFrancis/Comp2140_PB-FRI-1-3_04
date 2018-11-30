@@ -60,7 +60,7 @@
 			  </form>
 			  <script language="javascript">
 			function check1(form) {if(form.uname.value=="welcome" && form.psw.value=="welcome"){
-			window.open('logged/about.html')
+			window.open('logged/homepage.html')
 			window.close() 
 			}
 			else{
@@ -104,13 +104,13 @@
    	<div class="span">
     <div class="form-inline">
       <label for="firstname"><h4>FirstName</h4></label>
-      <input type="text" name="firstname" class="form-control" id="firstname" placeholder="Enter your firstname" required>
+      <input type="text" name="firstname" class="form-control" id="firstname" maxlength="32" placeholder="Enter your firstname" required pattern="[a-zA-Z ]{3,32}">
     </div>
     <br>
     <br>
     <div class="form-inline">  
     <label for="lastname"><h4>LastName:</h4></label>
-    <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Enter your lastname" required>
+    <input type="text" name="lastname" class="form-control" id="lastname" maxlength="32" placeholder="Enter your lastname" required pattern="[a-zA-Z ]{3,32}">
   </div>
   
   <br>
@@ -125,24 +125,24 @@
 	<br>
     <div class="form-inline">  
     <label for="studentid"><h4>StudentID#:</h4></label>
-    <input type="text" class="form-control" id="studentid" placeholder="620000000" required>
+    <input type="text" class="form-control" id="studentid" maxlength="9" placeholder="620000000" required>
   </div>
   <br>
   <br>
     <div class="form-inline"> 
     <label for="dob"><h4>Date of Birth:</h4></label>
-    <input type="date" name="dob"  class="form-control" id="dob" placeholder="March 27 1999" required>
+    <input type="date" name="dob"  class="form-control" id="dob" max="12-31-2001" placeholder="March 27 1999" required>
   <br>
   <br>
   <div class="form-inline"> 
   <label for="roomnumber"><h4>Current Room Number:</h4></label>
-  <input type="number" name="roomnumber" class="form-control" id="roomnumber" placeholder="6205" required>
+  <input type="text" name="roomnumber" class="form-control" id="roomnumber" maxlength="4" placeholder="6205" required>
   </div>
   <br>
   <br>
   <div class="form-inline"> 
   <label for="roomnumber"><h4>Prospective Room Number:</h4></label>
-  <input type="number" class="form-control" id="roomnumber" placeholder="6215" required>
+  <input type="text" class="form-control" id="roomnumber" maxlength="4" placeholder="6215" required>
   </div>
   <br>
   
@@ -233,27 +233,27 @@
     <br>
 	<div class="form-inline"> 
     <label for="homeaddress"><h4>Home Address:</h4></label>
-    <input type="textarea" name="homeaddress" class="form-control" id="homeaddress" placeholder="Eg: Lot 46 Luana Pen..." required>
+    <input type="textarea" name="homeaddress" class="form-control" id="homeaddress" maxlength="180" placeholder="Eg: Lot 46 Luana Pen..." required>
 	</div>
   	<hr>
   	<hr>
   	<h3><p><i><u><b>ADDITIONAL INFORMATION </b></u></i></p></h3>
     <div class="form-inline"> 
     <label for="phone number"><h4>Telephone Number:</h4></label>
-    <input type="text" class="form-control" id="phone number" placeholder="eg: 1-876-123-4567" required>
+    <input type="tel" class="form-control" id="phone number" min="7" maxlength="10" placeholder="eg:876-123-4567" required>
 	</div>
 	<br>
 	<br>
 	<div class="form-inline"> 
     <label for="emailaddress"><h4>Email Address:</h4></label>
-    <input type="text" name="email" class="form-control" id="emailaddress" placeholder="joebrown@uwimona.edu.jm" required>
+    <input type="text" name="email" class="form-control" id="emailaddress" maxlength="150" placeholder="joebrown@uwimona.edu.jm" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
   	</div>
   	<br>
   	
   	<br>
   	<div class="form-inline">
   	<label for="major"><h4>Major:</h4></label>
-    <input type="text"  name= "major"class="form-control" id="major" placeholder="Bsc. Software Engineering" required>
+    <input type="text"  name= "major"class="form-control" id="major" maxlength="100" placeholder="Bsc. Software Engineering" required pattern="[a-zA-Z ]{6,32}">
   	</div>
   	<br>
   	<br>  	
@@ -293,12 +293,12 @@
 	<br>
 	 <div class="form-inline"> 
 	<label for="school"><h4>Name of secondary high school: </h4></label>
-	<input type="text" name="school" placeholder="XYHZ High School" required><br>
+	<input type="text" name="school" maxlength="100" placeholder="XYHZ High School" required pattern="[a-zA-Z ]{6,32}"><br>
 	</div>
 	<br>
 	<div class="form-inline"> 
 	<label for="skills"><h4> Special Skills:</h4></label>
-	<input type="textarea" name="skills" placeholder="Singing" required><br>
+	<input type="textarea" name="skills" maxlength="250" placeholder="Singing" required><br>
 	</div>
 	<hr>
 	<hr>
@@ -306,13 +306,13 @@
 	<br>
 	<div class="form-inline"> 
 	<label for="illnesses"><h4> Any chronic illness(es)?</h4></label>
-	<input type="textarea" name="illnesses" placeholder="eg:Asthma" required><br>
+	<input type="textarea" name="illnesses" maxlength="200" placeholder="eg:Asthma" required><br>
 	</div>
 	<br>
 	<br>
 	<div class="form-inline"> 
 	<label for="specifics"><h4> Please specify </h4></label>
-	<input type="textarea" name="specifics" placeholder="Enter text here.." required><br>
+	<input type="textarea" name="specifics" maxlength="200" placeholder="Enter text here.." required><br>
 	</div>
 	<br>
 	<br>
@@ -322,25 +322,25 @@
 	<br>
 	<div class="form-inline">
 	<label for="emcontact"><h4> Name of Emergency Contact</h4></label>
-	<input type="text" name="emcontact" placeholder="Joe Diamond" required><br>
+	<input type="text" name="emcontact" maxlength="100" placeholder="Joe Diamond" required pattern="[a-zA-Z ]{6,32}" ><br>
 	</div>
 	<br>
 	<br>
 	<div class="form-inline">
 	<label for="relationship"><h4> Relationship </h4></label>
-	<input type="text" name="relationship" placeholder="Mother/Father/..." required><br>
+	<input type="text" name="relationship" maxlength="10" placeholder="Mother/Father/..." required><br>
 	</div>
 	<br>
 	<br>
 	<div class="form-inline">
 	<label for="number"><h4> Contact Number </h4></label>
-	<input type="text" name="number" placeholder="1-876-123-4567" required><br>
+	<input type="tel" name="number" min="7" maxlength="10" placeholder="876-123-4567" required><br>
 	</div>
 	<br>
 	<br>
     <div class="form-inline">
 	<label for="contactaddresss"><h4> Home Address </h4></label>
-	<input type="textarea" name="contactaddresss" placeholder="1-8 Blueberry Street" required><br>
+	<input type="textarea" name="contactaddresss" maxlength="180" placeholder="1-8 Blueberry Street" required><br>
 	</div>
 	<br>
 	<hr>
@@ -356,30 +356,30 @@
 	</div>
 	<div class="form-inline">
 	<label for="reason"><h4> If yes, plese indicate Hall and Period(Year) </h4></label>
-	<input type="text" name="reason" placeholder="eg:2015-2016" required><br>
+	<input type="text" name="reason" maxlength="10" placeholder="eg:2015-2016" required><br>
 	</div>
 	<div class="form-inline">
 	<label for="reason2"><h4> If yes, please state your reason for leaving the Hall</h4></label>
-	<input type="textarea" name="reason2" placeholder="Enter text here.." required><br>
+	<input type="textarea" name="reason2" maxlength="250" placeholder="Enter text here.." required><br>
     </div>
     <div class="form-inline">
         <label for="post"><h4> For the period for which you are requesting residence, will you be holding an official post in:</h4></label>
     	<label for="ELR"></label><h4> E.L.R Towers Hall Committee:</h4></label>
-    	<input type="radio" name="yes" value="yes" required> Yes
-    	<input type="radio" name="no" value="no" required>No
-    	&nbsp Post  &nbsp &nbsp <input type="text" name="post" placeholder="Hall Chairman " required>
+    	<input type="radio" name="ELR" value="yes" required> Yes
+    	<input type="radio" name="ELR" value="no" required>No
+    	&nbsp Post  &nbsp &nbsp <input type="text" name="post" maxlength="100" placeholder="Hall Chairman " required>
     </div>
     <div class="form-inline">
         <label for="post1"><h4> Guild of Students:</h4></label>
-        <input type="radio" name="yes" value="yes" required> Yes
-        <input type="radio" name="no" value="no" required>No
-    &nbsp Post  &nbsp  &nbsp<input type="text" name="post" placeholder="Guild Secretary" required>
+        <input type="radio" name="post1" value="yes" required> Yes
+        <input type="radio" name="post1" value="no" required>No
+    &nbsp Post  &nbsp  &nbsp<input type="text" name="post" maxlength="60" placeholder="Guild Secretary" required>
     </div>
 	<br>
 	<br>
 	<div class="form-inline">
 	<label for="reason3"><h4>State specifically, the reason for wanting to reside in Hall:</h4></label>
-	<input type="textarea" name="reason3" placeholder="Please specify your reason here..." required><br>
+	<input type="textarea" name="reason3" maxlength="250" placeholder="Please specify your reason here..." required><br>
 	</div>
 	<br>
 	<h3><i>Co-curricular Activities 2017-2018 ONLY- these activities must be verified by the signatures and official stamps/seals of Heads of Clubs and Societies.</i></h3>
@@ -387,24 +387,24 @@
 	<br>
 	<div class="form-inline">
 	<label for="activities"><h4> (i) University Activities</h4></label>
-	<input type="textarea" name="activities" placeholder="eg:UWI OneLife" required><br>
+	<input type="textarea" name="activities"  maxlength="180" placeholder="eg:UWI OneLife" required><br>
 	</div>
 	<br>
 	<br>
 	<div class="form-inline">
 	<label for="activities"><h4> (ii) Hall Activities</h4></label>
-	<input type="textarea" name="activities" placeholder="eg:Towers Courtesy Society" required><br>
+	<input type="textarea" name="activities" maxlength="180" placeholder="eg:Towers Courtesy Society" required><br>
 	</div>
 	<br>
 	<br>
 	<div class="form-inline">
 	<label for="activities1"><h4> (iii) Tower Activities</h4></label>
-	<input type="textarea" name="activities1" placeholder="eg:Inter-tower cricket" required><br>
+	<input type="textarea" name="activities1" maxlength="180" placeholder="eg:Inter-tower cricket" required><br>
 	<br>
 	<br>
 	<div class="form-inline">
 	<label for="activities3"><h4> (iv) Other Activities</h4></label>
-	<input type="textarea" name="activities" placeholder="Please specify here.." required><br>
+	<input type="textarea" name="activities" maxlength="180" placeholder="Please specify here.." required><br>
 	</input>
 	</div>
 	<br><br>
@@ -416,11 +416,11 @@ and/or other sanctions.</b></h3>
 	<hr>
 	<hr>
 	<h4> Applicant Signature</h4><input type="text" name="Signature" placeholder="Please insert signature" required><br>
-	<h4> Date</h4><input type="text" name="Signature" placeholder="DD/MM/YYYY"><br>
+	<h4> Date</h4><input type="date" name="Signature" max="31-12-2019" placeholder="DD-MM-YYYY"><br>
 	<br>
 	<br>
     <input type="submit" value="Submit">
-  </form>
+</form>
 	</article>
 	<br>
 	<br>

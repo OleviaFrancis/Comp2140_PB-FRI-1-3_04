@@ -32,7 +32,7 @@ USE elrdatabase2;
 --
 DROP TABLE IF EXISTS 'user';
 CREATE TABLE `user` (
-  `StudentID` varchar(11) NOT NULL,
+  `StudentID` int(11) NOT NULL,
   `FirstName` varchar(32) DEFAULT NULL,
   `LastName` varchar(32) DEFAULT NULL,
   `Gender` varchar(10) DEFAULT NULL,
@@ -65,10 +65,10 @@ CREATE TABLE `issues` (
   
 DROP TABLE IF EXISTS 'Contact';
 CREATE TABLE `Contact` (
-  `MessageID` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
-  `FullName` varchar(32) DEFAULT NULL,
-  `Email`varchar(32) DEFAULT NULL,
-  `PhoneNumber`int(10) DEFAULT NULL,
-  `Recipient` varchar(50) DEFAULT NULL,
-  `Message` varchar(100) DEFAULT NULL
+  `messageID` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+  `fullame`varchar(32) DEFAULT NULL,
+  `email` varchar(32) DEFAULT NULL,
+  `phonenumber` varchar(32) DEFAULT NULL,
+  `recipient` varchar(50) DEFAULT NULL,
+  `message`varchar(100) DEFAULT NULL
   ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
